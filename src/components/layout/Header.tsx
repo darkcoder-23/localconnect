@@ -1,6 +1,5 @@
-
 import Link from "next/link";
-import { Menu, MapPin } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const navigation = [
   { label: "Home", href: "/" },
