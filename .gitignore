@@ -16,3 +16,6 @@ coverage/
 .DS_Store
 Thumbs.db
 *.tsbuildinfo
+
+# Next.js generated files
+frontend/next-env.d.ts
