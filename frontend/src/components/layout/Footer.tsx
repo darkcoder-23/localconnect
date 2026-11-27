@@ -49,23 +49,15 @@ export default function Footer() {
                 <div>
                     <h3 className="font-bold">Support</h3>
 
+                    {/* These pages do not exist yet, so they are not links. */}
                     <ul className="mt-4 space-y-3 text-sm text-blue-100/70">
-                        <li>
-                            <Link href="/about" className="hover:text-white">About Us</Link>
-                        </li>
-                        <li>
-                            <Link href="/contact" className="hover:text-white">Contact Us</Link>
-                        </li>
-                        <li>
-                            <Link href="/privacy" className="hover:text-white">
-                                Privacy Policy
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/terms" className="hover:text-white">
-                                Terms & Conditions
-                            </Link>
-                        </li>
+                        {["About Us", "Contact Us", "Privacy Policy", "Terms & Conditions"].map(
+                            (label) => (
+                                <li key={label}>
+                                    {label} <span className="text-xs">(coming soon)</span>
+                                </li>
+                            ),
+                        )}
                     </ul>
                 </div>
 

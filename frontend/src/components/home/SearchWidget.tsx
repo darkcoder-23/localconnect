@@ -30,19 +30,19 @@ export default function SearchWidget() {
         params.set("category", category);
       }
 
-      router.push(`/services?${params.toString()}`);
+      router.push(`/services/search?${params.toString()}`);
       return;
     }
 
     if (accommodation) {
-      params.set("accommodation", accommodation);
+      params.set("type", accommodation);
     }
 
     if (budget) {
-      params.set("budget_max", budget);
+      params.set("budget", budget);
     }
 
-    router.push(`/find-brokers?${params.toString()}`);
+    router.push(`/find-brokers/search?${params.toString()}`);
   }
 
   function changeMode(nextMode: SearchMode) {

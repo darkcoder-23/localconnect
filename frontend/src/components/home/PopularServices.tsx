@@ -43,7 +43,7 @@ export default function PopularServices() {
                 {services.map(({ name, icon: Icon, color }) => (
                     <a
                         key={name}
-                        href={`/services?category=${encodeURIComponent(name.toLowerCase())}`}
+                        href={`/services/search?category=${encodeURIComponent(name.toLowerCase())}`}
                         className="group flex flex-col items-center rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-md"
                     >
                         <div className={`flex h-14 w-14 items-center justify-center rounded-2xl ${color}`}>
